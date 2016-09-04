@@ -1,0 +1,184 @@
+/* body generics */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  position: relative;
+}
+
+[class*="col-"] {
+  margin-bottom: 0.9375em;
+}
+
+.anchor {
+  padding-top: 10vh;
+}
+
+/* vertical viewport sizing */ 
+#home, #about, #portfolio, #faq {
+  height: 90vh;
+}
+
+#contact {
+  height: 100vh;
+}
+
+/* navbar */
+
+.nav > li > a:hover {
+  color: rebeccapurple !important;
+  transition: color 2s;
+  -webkit-transition:  color 2s; /* Safari */
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold; 
+} 
+
+/* home */
+#home {
+  background-color: palegoldenrod;
+  border-bottom: white solid 3px;
+}
+
+/* about */
+#about {
+  background-color: palegreen;
+  border-bottom: white solid 3px;
+}
+
+/* portfolio */
+#portfolio {
+  background-color: paleturquoise;
+  border-bottom: white solid 3px;
+}
+
+/* faq */
+#faq {
+  background-color: palevioletred;
+  border-bottom: white solid 3px;
+}
+
+#resp-video {
+  margin: 0 auto;
+  width: 560px;
+  /* height: 315px; */
+  padding: 10%;
+  border: white solid 3px;
+}
+
+#accordion {
+  height: 100%;
+}
+
+/* contact */
+#contact {
+  /* background-color: lightgray; */
+  background-image: url("../img/splash_desertwalk.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: rebeccapurple !important;
+  transition: color 2s;
+  -webkit-transition:  color 2s; /* Safari */
+}
+
+/* social media icons in footer */
+
+.social {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.social-icons {
+  position: relative;
+  /* float: clear; */
+  /* max-inline-size: 10%; */
+  height: 1.625em;
+  width: 1.625em;
+  margin: 0 auto;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  background-size: cover;
+  margin: 5px;
+}
+
+.fb {
+  background-image: url('../img/social/facebook-hover.png');
+}
+
+.fb:hover {
+  background-position: 0em -1.625em;
+  box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+}
+
+.inst {
+  background-image: url('../img/social/instagram-hover.png');
+}
+
+.inst:hover {
+  background-position: 0em -1.625em;
+  box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+}
+
+.tw {
+  background-image: url('../img/social/twitter-hover.png');
+}
+
+.tw:hover {
+  background-position: 0em -1.625em;
+  box-shadow: 0em 0em 0.25em 0.0625em rgba(0,0,0,0.8);
+}
+
+/* Typography */
+
+.navbar-brand {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.name a {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+.nav a {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+
+footer h4 {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
